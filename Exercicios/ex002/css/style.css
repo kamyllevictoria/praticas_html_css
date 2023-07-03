@@ -94,20 +94,17 @@ a:hover{
 
 .container_branco{
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(242, 54, 54);
     font-family: 'Questrial', sans-serif;
+    flex-direction: column;
 }
 
-
 .container_branco > h1{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-
+    text-align: center;
 }
