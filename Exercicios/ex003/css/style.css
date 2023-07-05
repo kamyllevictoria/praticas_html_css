@@ -211,7 +211,40 @@ section.home{
     line-height: 1.5;
 }
 
+.about .row .content a{
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 20px;
+}
 
+
+
+.icons-container{
+    background: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.icons-container .info{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.icons-container .icon{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.icons-container .icon img{
+    width: 60px;
+    height: 60px;
+
+}
 
 
 
@@ -234,6 +267,7 @@ section.home{
 
 
 /*Parte da responsividade com media queries*/
+
 
 
 @media (max-width: 1500px){
@@ -318,4 +352,6 @@ section.home{
     .heading{
         font-size: 3rem;
     }
+
+   
 }
