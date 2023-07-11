@@ -9,6 +9,8 @@ body{
     background-image: url("../images/hero-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: black;
+    overflow-x: hidden;
 }
 
 
@@ -199,19 +201,28 @@ body::before{
 }
 
 
-@media (min-width:887px){
+
+
+@media only screen and (max-width:887px){
     body{
-        max-width: 887px;
         background: black;
     }
 
     .login_body{
-        width: 100vw;
-        margin: 20px;
+        padding: 60px;
+        width: 100%;
+    }
+    
+    .signup{
+        padding-top: 40px;
     }
 
-    .input_box{
-        width: 100%;
-        height:50px ;
+    .facebook{
+        margin-top: 30px;
     }
+
+    .footer{
+        width: 100%;
+    }
+
 }
