@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray: #b3b3b3;
+    --purple00: #ab81e4;
+    --purple01: #6914e1;
+    --purple02: #8a56e9;
+    --purple03: #6087e7;
+    --blue01: #56a5f0;
+    --blue02: #478acb;
+    --blue03: #264a8a;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--purple01), var(--purple00));
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container{
+    margin: auto 0;
+    background-color: #ffffff;
+    min-width: 400px;
+    min-height: 500px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.427);
+    display: inline-block;
+}
+
+.container h2{
+    color: #000000;
+    margin: 30px;
+    font-weight: 900;
+}
+
+.form input{
+    margin: 5px 30px 5px 30px;
+    min-height: 30px;
+    min-width: 340px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--purple02);
+    outline: none;
+}
+
+.submit{
+    margin:30px;
+    display: block;
+}
+
+.submit input{
+    margin-bottom: 25px;
+    background-image:linear-gradient(to right, var(--purple02), var(--purple03));
+    min-height: 45px;
+    min-width: 340px;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.318);
+
+}
+
+.submit p{
+    display: flex;
+    justify-content: center;
+}
+
+
+.submit input:hover{
+    text-decoration: underline;
+}
+
+.social_media{
+    margin: 30px;
+    min-width: 340px;
+    
+}
+
+.twitter{
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    min-width: 340px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.318);
+    background-color: var(--blue01);
+    margin-bottom: 10px;
+}
+
+.twitter a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.twitter a:hover{
+    text-decoration: underline;
+}
+
+
+.facebook{
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    min-width: 340px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.318);
+    background-color: var(--blue03);
+    margin-bottom: 10px;
+}
+
+.facebook a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.facebook a:hover{
+    text-decoration: underline;
+}
