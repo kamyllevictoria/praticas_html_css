@@ -47,52 +47,6 @@
 
         </div>
     </div>
-    <script>
-        var a = window.document.getElementById('icontinue')
-        function continuar(){
-            a.innerText = "Continue the process"
-            a.style.background = '#333'
-            a.style.width =' 70%'
-            a.style.margin = '10px'
-            a.style.marginTop = '12px'
-            a.style.padding = '12px'
-            a.style.color = 'white'
-            a.style.margin = 'auto'
-            a.style.boxSizing = 'border-box'
-            a.style.borderRadius = '20px'
-            a.style.fontSize = '18px'
-            a.style.textAlign = 'center'
-            a.style.fontWeight ='bolder'    
-        }
-        function sair(){
-            a.innerText = "Continue"
-            a.style.background = '#737373'
-            a.style.width =' 70%'
-            a.style.margin = '10px'
-            a.style.marginTop = '12px'
-            a.style.padding = '12px'
-            a.style.color = 'white'
-            a.style.margin = 'auto'
-            a.style.boxSizing = 'border-box'
-            a.style.borderRadius = '20px'
-            a.style.fontSize = '18px'
-            a.style.textAlign = 'center'
-            a.style.fontWeight ='bolder' 
-        }
-
-        function onMouseOver(){
-            var botao = document.getElementById('icontinue')
-            botao.classList.add('continue-hover')
-        }
-
-        function onMouseOut(){
-            var botao = document.getElementById('icontinue')
-            botao.classList.remove('continue-hover')
-        }
-
-        var botao = document.getElementById('icontinue')
-        botao.addEventListener('mouseover', onMouseOver)
-        botao.addEventListener('mouseout', onMouseOut)
-    </script>
+    <script src ="../js/script.js"></script>
 </body>
 </html>

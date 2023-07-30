@@ -20,7 +20,6 @@ body{
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 3px 4px 8px rgb(191, 185, 222);
-
 }
 
 .blue{
@@ -99,6 +98,7 @@ body{
     margin-right: 40px;
     padding: 10px;
     font-size: 10px;   
+    max-width: 300px;
 }
 
 .button#red{
@@ -131,12 +131,13 @@ body{
 
 .continue{
     margin: auto;
+    max-width: 320px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .continue h2{
     background-color: #737373;
-    width: 70%;
-    margin: auto;
     margin-top: 10px;
     padding: 12px;
     color: white;
@@ -144,19 +145,6 @@ body{
     border-radius: 20px;
     font-size: 18px;
     text-align: center;
-
-}
-
-.continue-hover{
-    width: 400px;
-    margin: auto;
-    padding: 12px;
-    color: white;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 18px;
-    text-align: center;
-    background-color: #737373;
 }
 
 
@@ -218,7 +206,9 @@ body{
     }
 
     .continue{
-        width: 400px;
+        width: 320px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .white h1{
