@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS sum exercise</title>
+</head>
+<body>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="submit" value="Sum" onclick="CalcSum()">
+    <div id="sum">
+        <h1>The result is...</h1>
+    </div>
+
+    <script>
+        function CalcSum(){
+            var num1 = window.document.getElementById('num1')
+            var num2 = window.document.getElementById('num2')
+            var sumNumber = window.documente.getElementById('sum')
+            
+            var num1 = Number(num1.value)
+            var num2 = Number(num2.value)
+            var sum = num1 + num2
+
+            sumNumber.innerText(`The sum of the informed values ${num1} and ${num2} is ${sum}`)
+
+        }
+    
+    </script>
+  </body>
+</html>

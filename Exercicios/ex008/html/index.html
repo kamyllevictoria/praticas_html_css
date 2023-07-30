@@ -24,7 +24,6 @@
 
         <div class="white">
             <h1>Summary</h1>
-
             <div class="button" id="red">
                 <h2> <i class="fa-solid fa-star"></i> Reaction</h2>
                 <h2>80/100</h2>
@@ -41,10 +40,59 @@
                 <h2> <i class="fa-solid fa-eye"></i> Reaction</h2>
                 <h2>80/100</h2>
             </div>
-            <div class="continue">
+
+            <div class="continue" id="icontinue"  class ="btn" onmouseenter="continuar()" onmouseout="sair()">
                 <h2>Continue</h2>
             </div>
+
         </div>
     </div>
+    <script>
+        var a = window.document.getElementById('icontinue')
+        function continuar(){
+            a.innerText = "Continue the process"
+            a.style.background = '#333'
+            a.style.width =' 70%'
+            a.style.margin = '10px'
+            a.style.marginTop = '12px'
+            a.style.padding = '12px'
+            a.style.color = 'white'
+            a.style.margin = 'auto'
+            a.style.boxSizing = 'border-box'
+            a.style.borderRadius = '20px'
+            a.style.fontSize = '18px'
+            a.style.textAlign = 'center'
+            a.style.fontWeight ='bolder'    
+        }
+        function sair(){
+            a.innerText = "Continue"
+            a.style.background = '#737373'
+            a.style.width =' 70%'
+            a.style.margin = '10px'
+            a.style.marginTop = '12px'
+            a.style.padding = '12px'
+            a.style.color = 'white'
+            a.style.margin = 'auto'
+            a.style.boxSizing = 'border-box'
+            a.style.borderRadius = '20px'
+            a.style.fontSize = '18px'
+            a.style.textAlign = 'center'
+            a.style.fontWeight ='bolder' 
+        }
+
+        function onMouseOver(){
+            var botao = document.getElementById('icontinue')
+            botao.classList.add('continue-hover')
+        }
+
+        function onMouseOut(){
+            var botao = document.getElementById('icontinue')
+            botao.classList.remove('continue-hover')
+        }
+
+        var botao = document.getElementById('icontinue')
+        botao.addEventListener('mouseover', onMouseOver)
+        botao.addEventListener('mouseout', onMouseOut)
+    </script>
 </body>
 </html>

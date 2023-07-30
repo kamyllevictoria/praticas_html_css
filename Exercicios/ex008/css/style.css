@@ -76,10 +76,6 @@ body{
     font-size: 16px;
 }
 
-
-
-
-
 .white{
     width: 50%;
     height: 500px;
@@ -134,7 +130,6 @@ body{
 }
 
 .continue{
-    display: flex;
     margin: auto;
 }
 
@@ -151,3 +146,85 @@ body{
     text-align: center;
 
 }
+
+.continue-hover{
+    width: 400px;
+    margin: auto;
+    padding: 12px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #737373;
+}
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        display: block;
+        width: 400px;
+        height: 800px;
+        margin: auto;  
+    }
+
+    .blue{
+        width: 100%;
+        height: 320px;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .blue h1{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .circle{
+        width: 130px;
+        height: 130px;
+        margin-top: 10px;
+        display: block;
+        border-radius: 100px;
+        background-image: linear-gradient(to bottom,#322de9, #6c4ffc );
+    }
+
+    .circle h1{
+        color: white;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .circle h4{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.677);
+        font-size: 16px;
+    }
+
+    .blue_content h1{
+        color: white;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .blue_content p{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .button{
+        width: 300px;
+    }
+
+    .continue{
+        width: 400px;
+    }
+
+    .white h1{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}
+
+
