@@ -27,7 +27,7 @@ body{
   margin-top: 100px;
   width: 900px;
   height: 490px;
-  background-color: #0a0a1b;  
+  background-color: #a1a1ca;  
 }
 
 .vertical_content{
@@ -49,6 +49,7 @@ body{
 .vertical_daily a{
     color: var(--color7);
     text-decoration: none;
+    margin: 15px;
 }
 
 .vertical_daily #color_white{
@@ -81,13 +82,13 @@ body{
     border: 3px solid white;
 }
 
-.vertical_info p{
+.vertical_info_text p{
     color: white;
     font-size: 15px;
     margin: 15px 15px 0px 15px;
 }
 
-.vertical_info h1{
+.vertical_info_text h1{
     color: white;
     font-size: 22px;
     margin: 15px 15px 0px 15px;
@@ -108,7 +109,6 @@ body{
     margin: 20px 0px 20px 20px;
 
 }
-
 
 .block_line{
     width: 200px;
@@ -172,82 +172,137 @@ body{
 
 @media screen and (max-width:907px) {
     .container{
-        margin-top: 50px;
-        width:700px;
-        height: 800px;
-        background-color: #0a0a1b;  
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 700px;
+        height: 890px;
+        background-color: #a1a1ca;  
     }
+
     .vertical_content{
         margin: 20px;
+        min-width: 300px;
+        height: 800px;
     }
-    
-}
-
-@media screen and (max-width:700px) {
-    .container{
-        display: flex;
-        margin: auto;
-        margin-top: 50px;
-        width: 900px;
-        height: 900px;  
-    }
-
-    .vertical_content{
-        height: 700px;
-        margin-left: 30px;
-    }
-    
     .vertical_info{
+        min-width: 300px;
         height: 350px;
     }
-
-    .vertical_daily {
-        top: 50%;
+    .vertical_info_text p{
+        font-size: 19px;
     }
-
-    .vertical_daily a{
-        font-size: 20px;
+    .vertical_info_text h1{
+        font-size: 25px;
     }
-    
     .vertical_info img{
         width: 150px;
         height: 150px;
-        margin: 20px;
+        border-radius: 100px;
     }
-    
-    .vertical_info p{
-        font-size: 20px;
+
+    .vertical_daily{
+        margin-top: 50px;
     }
-    
-    .vertical_info h1{
-        font-size: 25px;
+
+    .all_block{
+        min-width: 340px;
+        margin: 0;
+        height: 830px;
     }
-    
+
     .block_content{
-        width: 400px;
-        height: 95px;
+        margin: 20px;
+        width: 300px;
+        height: 50px;
     }
 
     .block_line{
-        width: 400px;
-        height: 95px;
+        width: 300px;
+        height: 100px;
     }
-    
     .block_line_p p{
         font-size: 14px;
+        margin: 5px 10px 5px 10px;
+    }
+    .block_line_h1 h1{
+        font-size: 22px;
+        margin: 5px 10px 5px 10px;
+    }
+    .block_line_h1 p{
+        font-size: 14px;
+        margin: 5px 10px 5px 10px;
+    }
+     
+}
+
+@media screen and (max-width: 715px) {
+    .container{
+        display: block;
+        max-width: 400px;
+        height: 1040px;
+        margin: 10px auto;
+    }
+    .vertical_content{
+        margin: auto;
+        display: block;
+        width: 350px;
+        height: 160px;
+        border-radius: 10px;
+        
+    }
+    .vertical_info{
+        display: flex;
+        width: 350px;
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .vertical_info img{
+        width: 80px;
+        height: 80px;
         margin: 10px;
     }
 
-    .block_line_h1 h1{
+    .vertical_info_text{
+        min-width: 215px;
+    }
+
+    .vertical_info_text p{
+        min-width: 215px;
+        font-size: 14px;
+        margin: 30px 15px 0px 15px;
+    }
+
+    .vertical_info_text h1{
         font-size: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0px 15px 0px 15px;
     }
     
-    .block_line_h1 p{
-        font-size: 14px;
-        margin-left: 10px;
-        margin-right: 10px;
+    .vertical_daily{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        position: relative;
+        top: 100%;
+        right: 80%;
+    }
+    .vertical_daily p{
+        font-size: 16px;
+    }
+    .block_line{
+        margin: auto;
+        width: 350px;
+    }
+    .block_content{
+        margin: auto;
+        width: 350px;
+    }
+    .block_line_h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
 }
-
