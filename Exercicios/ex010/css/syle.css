@@ -40,8 +40,6 @@ body{
     margin: 20px 0px 20px 20px;
 }
 
-
-/*aqui nao mexemos em nada*/
 .vertical_daily {
     display: block;
     position: relative;
@@ -68,7 +66,7 @@ body{
 }
 
 .vertical_info{
-    min-width: 200px;
+    width: 200px;
     height: 250px;
     box-sizing: content-box;
     border-radius: 15px;
@@ -111,7 +109,7 @@ body{
 
 }
 
-/*aqui nao devemos alterar nada*/
+
 .block_line{
     width: 200px;
     height: 160px;
@@ -169,3 +167,87 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
+
+@media screen and (max-width:907px) {
+    .container{
+        margin-top: 50px;
+        width:700px;
+        height: 800px;
+        background-color: #0a0a1b;  
+    }
+    .vertical_content{
+        margin: 20px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        width: 900px;
+        height: 900px;  
+    }
+
+    .vertical_content{
+        height: 700px;
+        margin-left: 30px;
+    }
+    
+    .vertical_info{
+        height: 350px;
+    }
+
+    .vertical_daily {
+        top: 50%;
+    }
+
+    .vertical_daily a{
+        font-size: 20px;
+    }
+    
+    .vertical_info img{
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+    
+    .vertical_info p{
+        font-size: 20px;
+    }
+    
+    .vertical_info h1{
+        font-size: 25px;
+    }
+    
+    .block_content{
+        width: 400px;
+        height: 95px;
+    }
+
+    .block_line{
+        width: 400px;
+        height: 95px;
+    }
+    
+    .block_line_p p{
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .block_line_h1 h1{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .block_line_h1 p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
