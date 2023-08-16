@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid{
+    display: grid;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.item{
+    margin: 5px;
+    background-color: orange;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -84,12 +84,80 @@ Podemos personalizar as letras com os nomes das nossas classes para nao ficarmos
 .footer2{
     grid-area: footer2;
 }
+
+.grid-template-1{
+    grid-template: 70px 50px 55px / 1fr 1fr 2fr;
+}
+/*
+70 para a primeira linha
+50px para a segunda linha
+55px para a terceira linha
+
+1fr primeira coluna
+1fr segunda coluna
+2fr terceira coluna
+*/
+
+/*O grid-template nos possibilita simplificar a criaçaõ de linhas e colunas. na primeira parte, informamos a largura das linhas, a segunda parte, informamos cada tamanho das colunas, primeira, segunda, terceira etc...*/
  
+.grid{
+    display: grid;
+}
+
+.grid-template {
+    grid-template:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+}
+
+.gap{
+    gap: 20px;
+}
+
+/*esses 50px 150px e 100px sao os tamanhos das linhas. 100px 1fr e 50px sao os tamanhso das colunas*/
+
+.column-gap{
+    column-gap: 10px;
+    
+}
+
+.row-gap{
+    row-gap: 20px;
+}
+
+/*nesse caso, nao teremos todas as caixas juntas pq temos um amrgin de 5px no item declarado. mas, se retirarmos, ele ficara sem nenhum margin e sem/com gap de rows e columns.*/
+
+
+.grid-auto-columns-1{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 100px;
+}
+/*nesse caso, deixamos claro que desejamos criar 2 colunas fixas com 1fr, mas, os outros itens terão a criação automática de uma coluna com 100px, entao, ele será criado automaticamente. */
+
+.item6{
+    grid-column: 7;
+}
+/*o item6 força a criaçao de 6 colunas, nesse caso, as colunas pré definidas como 1fr, serão adaptadas para essas novas colunas de 100px (definidas no grid-auto-columns), isso nao quer dizer que elas tambem irao possuir 100px, mas ocuparão uma fração menor, pois o numero de novas colunas é maior do que antes.*/
+/*Se aumentarmos o numero de colunas para 7, por exemplos, nossas colunas de 1fr ficarao menores e as outras colunas nao definidas diretamente,continuarao ocupando 100px. as colunas pre definidas que se adaptarao.*/
+
+.grid-auto-rows-1{
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 100px;
+}
+
+.item7{
+    grid-row: 7;
+}
+/*A propriedade dos columns e rows são as mesmas, porem, com linhas.*/
+
+
 @media screen and (max-width: 500px){
     .grid-template-areas-2{
         grid-template-columns: 100%;
         grid-template-rows: 50px 100px 50px 50px 0px 30px;
-    grid-template-areas: 
+        grid-template-areas: 
         "logo2 "
         "sidenav2 "
         "nav2"
