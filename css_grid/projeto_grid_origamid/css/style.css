@@ -16,6 +16,8 @@ a{
 
 img{
     max-width: 100%;
+    display: block;
+    border-radius: 5px;
 }
 /*----Estruruta do grid geral----*/
 
@@ -41,6 +43,7 @@ img{
     max-width: 200px;
 }
 
+/*HEADER*/
 .header nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -63,18 +66,147 @@ img{
 
 
 
+/*SIDENAV*/
 .sidenav{
     grid-area: sidenav;
+    background-color: #fafbfc;
+    padding: 30px;
 }
 
-.content{
-    grid-area: content;
+.sidenav li a{
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.156);
+    transition: .2s;
 }
 
+.sidenav li a:hover{
+    background-color: #B07DfD;
+}
+
+
+
+/*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
+    background-color: #fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    gap: 30px;
 }
+
+
+/*CONTENT*/
+.content{
+    grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.col-wide{
+    grid-column: 1 / -1;
+}
+
+.img1{
+    grid-row: span 2;
+    align-self: end;
+}
+
+.img2{
+align-self: end;
+}
+
+/*ESTILOS CONTENT*/
+
+p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: black;
+}
+
+.info p + p{
+    margin-top:30px;
+    
+}
+
+.titulo h1{
+    color: #B07DfD;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1;
+}
+
+.titulo span{
+    color: #8844ee;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/*Caracteristicas*/
+
+.caracteristicas{
+    display: flex;
+    align-items: flex-start;
+}
+
+.caracteristicas > div{
+    width: 80px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #8844ee, #B07DfD);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.156);
+    position: relative;
+
+}
+
+.caracteristicas >div:first-child{
+    margin-right: 30px;
+}
+
+.caracteristicas span{
+    display: block;
+    color: #B07DfD;
+}
+
+.numero{
+    color: #B07DfD;
+    font-size: 50px;
+    line-height: 1;
+    margin: 10px auto;
+}
+
+.rotulo{
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0px;
+    position: relative;
+    top: 2px;
+
+
+}
+
+/*FOOTER*/
 
 .footer{
     grid-area: footer;
+    background-image: linear-gradient(to right, #8844ee, #B07DfD);
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
