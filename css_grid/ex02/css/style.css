@@ -122,7 +122,7 @@ Podemos personalizar as letras com os nomes das nossas classes para nao ficarmos
     column-gap: 10px;
     
 }
-
+ 
 .row-gap{
     row-gap: 20px;
 }
@@ -152,6 +152,67 @@ Podemos personalizar as letras com os nomes das nossas classes para nao ficarmos
 }
 /*A propriedade dos columns e rows são as mesmas, porem, com linhas.*/
 
+
+
+.grid-column-1{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+}
+
+.grid-column-1 .item1{
+    grid-column: 2;
+}
+
+.grid-column-1 .item3{
+    grid-column: 1;
+}
+/*quando colocamos o grid column em uma classe e fazemos o grid-column: 2, quer dizer que ele vai começar a partir da coluna 2, ou seja, os itens a seguir vao indo para tras automaticamente, como se estivessem sendo empurrados.*/
+
+
+.grid-column-2 .item1{
+     grid-column: span 2;
+}
+
+/*Quando usamos o span, ele cria uma expansao para a outra coluna, fica mais largo, comprido*/
+
+/*Ao colcarmos a barra no sapn, queremos dizer que "comece na linha x e vá ate a linha Y"*/
+.grid-column-2 .item6{
+    grid-column: 1 / span 3 ;
+}
+
+
+
+.grid-column-3 .item2{
+    grid-column: 1 / 3;
+}
+
+.grid-column-3 .item3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-column-3 .item4{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+/*O grid column start/end determina quando e onde as LINHAS irao começar e terminar. no caso, temos uma linha na vertical colada no canto da nossa div, entao é por ela que todos começam*/  
+
+.grid-row-1{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;    
+}
+
+
+.grid-row-1 .item12{
+    grid-row: 2;
+    grid-row: span 2;
+
+}
+
+.grid-row-1 .item32{
+    grid-row: 1;
+    grid-row: span 3;
+}
 
 @media screen and (max-width: 500px){
     .grid-template-areas-2{
