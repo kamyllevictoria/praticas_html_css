@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 
-body, p, h1, ul, li, block{
+
+*{
+    text-align: justify;
     padding: 0;
     margin: 0;
     font-family: 'Vollkorn', Georgia, serif;
@@ -89,8 +91,6 @@ img{
     background-color: #B07DfD;
 }
 
-
-
 /*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
@@ -100,7 +100,6 @@ img{
     padding: 30px;
     gap: 30px;
 }
-
 
 /*CONTENT*/
 .content{
@@ -112,32 +111,28 @@ img{
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
-
 .col-wide{
     grid-column: 1 / -1;
 }
-
 .img1{
     grid-row: span 2;
     align-self: end;
 }
-
 .img2{
 align-self: end;
 }
 
-/*ESTILOS CONTENT*/
 
+
+/*ESTILOS CONTENT*/
 p{
     font-size: 1.2em;
     line-height: 1.6;
     letter-spacing: -0.005em;
     color: black;
 }
-
 .info p + p{
-    margin-top:30px;
-    
+    margin-top:30px; 
 }
 
 .titulo h1{
@@ -146,21 +141,17 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1;
 }
-
 .titulo span{
     color: #8844ee;
     font-size: 14px;
     font-style: italic;
 }
 
-
 /*Caracteristicas*/
-
 .caracteristicas{
     display: flex;
     align-items: flex-start;
 }
-
 .caracteristicas > div{
     width: 80px;
     text-align: center;
@@ -169,42 +160,80 @@ p{
     border-radius: 5px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.156);
     position: relative;
-
 }
-
 .caracteristicas >div:first-child{
     margin-right: 30px;
 }
-
 .caracteristicas span{
     display: block;
     color: #B07DfD;
 }
-
 .numero{
     color: #B07DfD;
     font-size: 50px;
     line-height: 1;
     margin: 10px auto;
 }
-
 .rotulo{
     background-color: white;
     border-radius: 0 0 5px 5px;
     padding: 5px 0px;
     position: relative;
     top: 2px;
-
-
+}
+.destaque{
+    max-width: 20em;
+    font-size: 15px;
+    color: #B07DfD;
 }
 
-/*FOOTER*/
+/*CITACAO*/ 
 
+.citacao{
+    max-width: 900px;
+    background-image: linear-gradient(to bottom, #8844ee, #B07DfD);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.156);
+    padding: 30px;
+    align-self: start;
+}
+
+.citacao p{
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    max-width: 600px;
+}
+
+/*SURGIMENTO*/
+.surgimento{
+    max-width: 400px;
+    background-image: linear-gradient(to bottom, #8844ee, #B07DfD);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.156);
+    padding: 30px;
+    align-self: start;
+}
+
+.surgimento li{
+    margin: auto;
+    color: white;
+    font-size: 22px;
+    font-family: 'Vollkorn', Georgia, serif;
+    line-height: 55px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.487);
+}
+
+
+/*FOOTER*/
 .footer{
     grid-area: footer;
     background-image: linear-gradient(to right, #8844ee, #B07DfD);
 }
-
 .footer p{
     color: white;
     text-align: center;
