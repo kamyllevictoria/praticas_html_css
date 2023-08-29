@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.container{
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 200px 100px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 75px;
+    max-width: 1000px;
+    min-height: 400px;
+    background-color: rgb(232, 232, 232);
+    grid-gap: 5px 5px;
+}
+
+.item{
+    background-color: pink;
+    margin: 5px;
+}
+
+.grid-areas-1{
+    grid-template-areas: 
+    "header menu sidenav"
+    "conteudo conteudo sidenav"
+    "anuncio1 anuncio1 anuncio"
+    "subfooter subfooter anuncio2"
+    "footer footer footer"
+;
+}
+
+.item1{
+    background-color: lightgreen;
+    grid-area: header;
+}
+
+.item2{
+    background-color: rgb(144, 236, 238);
+    grid-area: menu ;
+}
+
+.item3{
+    background-color: rgb(238, 144, 224);
+    grid-area:  sidenav;
+}
+
+.item4{
+    background-color: rgb(238, 235, 144);
+    grid-area: conteudo ;
+}
+
+.item5{
+    background-color: rgb(158, 144, 238);
+    grid-area: anuncio1 ;
+}
+
+.item6{
+    background-color: rgb(238, 152, 144);
+    grid-area: anuncio ;
+}
+
+.item7{
+    background-color: rgb(188, 144, 238);
+    grid-area: subfooter ;
+}
+
+.item8{
+    background-color: lightsalmon;
+    grid-area: anuncio2;  
+}
+
+.item9{
+    grid-area:footer ;
+}
+
+
+
