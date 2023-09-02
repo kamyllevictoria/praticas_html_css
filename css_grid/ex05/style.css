@@ -83,6 +83,7 @@
 @media screen and (max-width:884px) { 
 
     .container{
+        margin: 0;
         margin: 50px 20px 50px 20px;
         max-width: 820px;
         grid-template-columns: 50% 50%;
@@ -103,7 +104,6 @@
         "anuncio anuncio2"
         "footer footer";
     }
-    
     .item1{
         grid-area: header;
     }
